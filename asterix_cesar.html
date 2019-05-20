@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Projecto Wook - Astérix César - Diogo Correia</title>
+    <link rel="stylesheet" href="asterix_cesar.css">
+    <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
+</head>
+<body>
+<div id="tela"></div>
+<div id="popup">
+    <p>Escolha a localidade da sua preferência</p>
+    <ul id="ulPopup">
+    </ul>
+    <span id="cruz" class="fecha_popup noselect">X</span>
+</div>
+<header>
+    <div id="headerFila1">
+        <div id="sticker"><p>Promoção</p><p>de Natal</p></div>
+        <div id="logo">
+            <a href="index.html"><img src="imagens/logo1.jpg" id="logotipo"></a>
+        </div>
+        <div id="divPesquisa">
+            <form action="pesquisa.php" id="formPesquisa">
+                <label for="pesquisa"></label><input type="text" id="pesquisa" name="pesquisa" required placeholder="Pesquisa"><div id="lupa">
+                </div>
+            </form>
+        </div>
+        <div id="header3">
+                <p id="localidade"></p>
+                <div id="redesSociais">
+                <a href="https://www.facebook.com/livrariawook/" target="_blank"><i id="icones" class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i id="icones" class="fab fa-twitter"></i></a>
+                <a href="https://pt.linkedin.com/" target="_blank"><i id="icones" class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCZOSfNcH4TMjHpcPeXfbJ_A" target="_blank"><i id="icones" class="fab fa-youtube"></i></a>
+                </div>
+        </div>
+    </div>
+    <ul id="menuTopo">
+        <li><a class="negrito" href="#">Ensino</a>
+            <ul>
+               <li><a href="#">Livros escolares</a></li>
+                <li><a href="#">Auxiliares de ensino</a></li>
+                <li><a href="#">Livros escolares</a></li>
+            </ul>
+        </li>
+        <li><a class="negrito" href="#">Internacional</a>
+           <ul>
+               <li><a href="#">Livros em francês</a></li>
+               <li><a href="#">Livros em inglês</a></li>
+               <li><a href="#">Livros em espanhol</a></li>
+           </ul>
+        </li>
+        <li><a class="negrito" href="#">eBooks</a>
+           <ul>
+               <li><a href="#">Em português</a></li>
+               <li><a href="#">Em inglês</a></li>
+           </ul>
+        </li>
+    </ul>
+    <div id="breadcrumb">
+        <p id="inicio">Início</p>
+        <p id="data">
+            <span id="diaExtenso"></span>, <span id="diaAlgarismo"></span> de <span id="mes"></span> de <span id="ano"></span>
+        </p>
+    </div>
+</header>
+<main>
+<div id="geral">
+    <div id="colEsq" class="linhaVertical">
+                <p class="subtitulo">Promoções</p>
+                <div id="listaPromocoes">
+                    <div id="olhar">
+                        <img src="imagens/No%20teu%20Olhar.jpg" width="150px" height="230px">
+                        <p>No teu olhar</p>
+                        <p>15€</p>
+                    </div>
+                    <div id="japones">
+                        <img src="imagens/O%20amante%20japon%C3%AAs.jpg" width="150px" height="230px">
+                        <p>O amante japonês</p>
+                        <p>25€</p>
+                    </div>
+                    <div id="flores">
+                        <img src="imagens/As%20Flores%20de%20L%C3%B3tus.jpg" width="150px" height="230px">
+                        <p>As flores de lótus</p>
+                        <p>28€</p>
+                    </div>
+                </div>
+    </div>
+    <div id="colDir">
+        <div id="linha1Dir">
+            <div id="imagemAsterix">
+                <img src="imagens/Ast%C3%A9rix%20-%20O%20Papiro%20de%20C%C3%A9sar.jpg">
+            </div>
+            <div id="textoAsterix">
+                <p class="subtitulo">Astérix - O Papiro de César</p>
+                <p>Didier Conrad, Jean-Yves Ferri</p>
+                <p>Edição/reimpressão: <span class="negrito">2015</span></p>
+                <p>Páginas: <span class="negrito">48</span></p>
+                <p>Editor: <span class="negrito">Edições Asa</span></p>
+                <p>ISBN: <span class="negrito">9789892333298</span>
+                </p>
+            </div>
+            <div id="divBaloes">
+                <div id="baloes">
+                    <div id="conjunto1">
+                        <div class="balao" id="b1"><p>POUPE</p><p>50%</p></div>
+                        <div class="triangulo" id="t1"></div>
+                    </div>
+                    <div id="conjunto2">
+                        <div class="balao" id="b2"><p>ENVIO</p><p>GRÁTIS</div>
+                        <div class="triangulo" id="t2"></div>
+                    </div>
+                    <div id="conjunto3">
+                        <div class="balao" id="b3"><p>ENTREGA</p><p>24H</p></div>
+                        <div class="triangulo" id="t3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="linha2Dir">
+            <ul id="tabs">
+                <li><a data-numero="0" class="liTab" id="sinopse" href="#">Sinopse</a></li>
+                <li><a data-numero="1" class="liTab" id="comentarios" href="#">Comentários</a></li>
+                <li><a data-numero="2" class="liTab" id="autor" href="#">Autor</a></li>
+                <li><a data-numero="3" class="liTab" id="caracteristicas" href="#">Características</a></li>
+            </ul>
+             <div class="divTab" id="sinopseJanela">
+                        <p>Novo álbum das aventuras de Astérix (o nº 36), assinado pela nova dupla de autores que já foi responsável pelo álbum anterior (Astérix entre os Pictos). O lançamento será simultâneo em todo o mundo e ocorrerá em 22 de outubro de 2015. Os pormenores sobre este novo álbum estiveram (e em grande parte continuam) envoltos no mais rigoroso sigilo.</p>
+            </div>
+            <div class="divTab" id="comentariosJanela">
+                    <p>Coloque aqui o seu comentário</p>
+                <div id="comentariosJanela2">
+                    <div id="comentariosEsq">
+                        <p>Nome:</p>
+                        <p>Título do comentário:</p>
+                        <p>Comentário:</p>
+                    </div>
+                    <div id="comentariosDir">
+                    <form action="comentarios.php" id="formComentarios">
+                            <p><label for="nome"></label>
+                                <input type="text" size="49" id="nome" name="nome" required></p>
+                            <p><label for="tituloComentario"></label><input type="text" size="49" id="tituloComentario" name="tituloComentario" required></p>
+                            <p><label for="comentario"></label><textarea id="comentario" name="comentario" cols="50" rows="5" required></textarea></p>
+                        <div id="estrelas">
+                            <i data-numero="1" class="far fa-star"></i>
+                            <i data-numero="2" class="far fa-star"></i>
+                            <i data-numero="3" class="far fa-star"></i>
+                            <i data-numero="4" class="far fa-star"></i>
+                            <i data-numero="5" class="far fa-star"></i>
+                        </div>
+                        <p>* campos de preenchimento obrigatório</p>
+                        <button type="reset" id="btLimpa" name="btLimpa">LIMPAR <i class="fas fa-times"></i></button>    
+                        <button type="submit" id="btEnviar" name="btEnviar">ENVIAR <i class="fas fa-envelope"></i></button>
+                    </form>
+                </div>
+            </div>    
+            </div>
+                <div class="divTab" id="autorJanela">
+                        <p class="negrito">Didier Conrad</p>
+                        <p>Desenhador - Em 1973 dá os seus primeiros passos no mundo da BD, através de uma Carte Blanche publicada no Journal de Spirou. Sob o pseudónimo de Pierce, inicia Kid Lucky, série que narra a infância do Lucky Luke de Morris, Em 2011 cria a série Marsu Kids, mais uma série derivada, desta feita a partir das aventuras do divertido Marsupilami, animal mítico inventado por Franquin. Uma obra rica, um traço reconhecível e respeitado, e cores (...)</p>
+                        <p class="negrito">Jean-Yves Ferri</p>
+                        <p>Argumentista - Em 1996, publica o seu primeiro álbum de BD, Les Fables Autonomes (2 volumes publicados). Continua com as aventuras do seu polícia rural, Aimé Lacapelle, uma figura que haveria de tornar-se mítica no seio da Polícia Montada do Tarn, e de que serão publicados quatro álbuns entre 2000 e 2007.</p>
+                        <p>Em 1995 conhece, em Paris, o seu futuro coautor para o desenho: Manu Larcenet. Este encontro leva à criação da célebre série Le Retour à la Terre, de que Ferri será o argumentista e que conta já com 7 (...)</p>
+                </div>
+                <div class="divTab" id="caracteristicasJanela">
+                    <p>Dimensões: <span class="negrito">225 x 285 x 5 mm</span></p>
+                    <p>Tipo de Produto: <span class="negrito">Livro</span></p>
+                    <p>Classificação Temática:</p>
+                    <ul>
+                    <li>Livros em Português</li>
+                    <li>Banda Desenhada > Humor</li>
+                    </ul>
+                </div> 
+        </div>
+    <p class="subtitulo">Do mesmo autor</p>
+        <div id="slider">
+            <div id="setaEsq"></div>
+            <div id="setaDir"></div>
+            <div id="imagensSlider">
+                <img class="imgSlider" src="imagens/asterix_adivinho.jpg">
+                <img class="imgSlider" src="imagens/asterix_amigos.jpg">
+                <img class="imgSlider" src="imagens/asterix_ceu.jpg">
+                <img class="imgSlider" src="imagens/asterix_chefes.jpg">
+                <img class="imgSlider" src="imagens/asterix_cleopatra.jpg">
+                <img class="imgSlider" src="imagens/asterix_companhia.jpg">
+                <img class="imgSlider" src="imagens/asterix_deuses.jpg">
+                <img class="imgSlider" src="imagens/asterix_foice.jpg">
+                <img class="imgSlider" src="imagens/asterix_gauleses.jpg">
+                <img class="imgSlider" src="imagens/asterix_helvecios.jpg">
+                <img class="imgSlider" src="imagens/asterix_louros.jpg">
+                <img class="imgSlider" src="imagens/asterix_majestade.jpg">
+                <img class="imgSlider" src="imagens/asterix_normandos.jpg">
+                <img class="imgSlider" src="imagens/asterix_olimpicos.jpg">
+                <img class="imgSlider" src="imagens/asterix_pictos.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<footer>
+    <p><a href="#">Cartão Wookmais</a> | <a href="#">Programa de Afiliados</a> | <a href="#">Condições gerais de venda</a> | <a href="#">Compras 100% seguras</a> | <a href="#">Política de Privacidade</a> | <a href="#">Ajuda</a></p>
+    <p>©1999/2015 Grupo Porto Editora. Todos os direitos reservados, Porto, Portugal | Este site está conforme o novo Acordo Ortográfico.</p>
+    <p>Salvo indicação em contrário, os descontos apresentados referem-se a promoções válidas para o dia 03-12-2015</p>
+</footer>
+<script>
+// calcular imagem aleatória sempre que abre pagina:
+    var aleatorio=Math.floor((Math.random() * 10) + 1);
+    document.getElementById("logotipo").src="imagens/logo"+aleatorio+".jpg";
+//Lightbox funções:
+function mostra_popup() {
+    document.getElementById("tela").style.display="block";
+    document.getElementById("popup").style.display="block";
+}
+function fecha_popup() {
+    document.getElementById("tela").style.display="none";
+    document.getElementById("popup").style.display="none";
+}
+var locais=["Braga", "Porto", "Coimbra", "Lisboa", "Faro"];
+document.getElementById("localidade").innerHTML=locais[0];
+for (var pos=0; pos<locais.length; pos++) {
+    document.getElementById("ulPopup").innerHTML+="<li class='liLocal'>"+locais[pos]+"</li>";
+}
+//escolher localidade:
+for (var pos1=0; pos1<document.getElementsByClassName("liLocal").length; pos1++) {
+    
+    document.getElementsByClassName("liLocal")[pos1].addEventListener("click",function() {
+        document.getElementById("localidade").innerHTML=this.innerHTML;
+    fecha_popup();
+}, false);
+}
+// abrir lightbox:
+document.getElementById("localidade").addEventListener("click",function() {
+    mostra_popup();
+}, false);
+// fechar lightbox:
+document.getElementById("cruz").addEventListener("click",function() {
+    fecha_popup();
+}, false);
+//ir buscar data;
+var hoje = new Date();
+var dias = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"];
+var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+document.getElementById("diaAlgarismo").innerHTML=hoje.getDate();
+document.getElementById("diaExtenso").innerHTML=dias[hoje.getDay()];
+document.getElementById("mes").innerHTML=meses[hoje.getMonth()];
+document.getElementById("ano").innerHTML=hoje.getFullYear();
+// tabs:
+function limpaCorHeader () {
+    document.getElementById("sinopse").style.backgroundColor="#ccc";
+    document.getElementById("autor").style.backgroundColor="#ccc";
+    document.getElementById("comentarios").style.backgroundColor="#ccc";
+    document.getElementById("caracteristicas").style.backgroundColor="#ccc";
+}
+function escondeTabs () {
+    document.getElementById("sinopseJanela").style.display="none";
+    document.getElementById("autorJanela").style.display="none";
+    document.getElementById("comentariosJanela").style.display="none";
+    document.getElementById("caracteristicasJanela").style.display="none";
+}
+//abrir janela escolhida:
+for (var pos2=0; pos2<document.getElementsByClassName("liTab").length; pos2++) {
+    
+    document.getElementsByClassName("liTab")[pos2].addEventListener("click",function() {
+        limpaCorHeader();
+        this.style.backgroundColor="orange";
+        escondeTabs();
+       var numeroCorrespondente=this.getAttribute("data-numero"); 
+        document.getElementsByClassName("divTab")[numeroCorrespondente].style.display="block";
+}, false);
+}
+// Escolher e pintar estrelas:
+for (var pos3=0; pos3<document.getElementsByClassName("fa-star").length; pos3++) {
+    document.getElementsByClassName("fa-star")[pos3].addEventListener("click",function() {
+        this.classList.remove("far");
+        this.classList.add("fas");
+        var numeroPintadas=this.getAttribute("data-numero");
+        for (var pos4=0; pos4<numeroPintadas; pos4++) {
+            document.getElementsByClassName("fa-star")[pos4].classList.remove("far");
+            document.getElementsByClassName("fa-star")[pos4].classList.add("fas");
+        }
+        for (var pos5=numeroPintadas; pos5<5; pos5++) {
+            document.getElementsByClassName("fa-star")[pos5].classList.remove("fas");
+            document.getElementsByClassName("fa-star")[pos5].classList.add("far");
+        }
+}, false);
+}
+//limpar estrelas:
+document.getElementById("btLimpa").addEventListener("click",function() {
+    for (var pos10=0; pos10<document.getElementsByClassName("fa-star").length; pos10++) {
+     document.getElementsByClassName("fa-star")[pos10].classList.remove("fas");
+    document.getElementsByClassName("fa-star")[pos10].classList.add("far");
+    }
+    }, false);
+//slider:
+var tamanhoSlider=document.getElementsByClassName("imgSlider").length;
+var deslocaEsq=0;
+for (var pos7=0; pos7<tamanhoSlider; pos7++) {
+    document.getElementsByClassName("imgSlider")[pos7].style.left=deslocaEsq+"px";
+    deslocaEsq+=75;
+}
+//carregar na seta dir:
+document.getElementById("setaDir").addEventListener("click",function() {
+if (document.getElementsByClassName("imgSlider")[0].style.left==="0px" || document.getElementsByClassName("imgSlider")[0].style.left==="calc(0px)" ) { return false; } else {
+for (var pos8=0; pos8<tamanhoSlider; pos8++) {
+    var posicaoX=document.getElementsByClassName("imgSlider")[pos8].style.left;
+    document.getElementsByClassName("imgSlider")[pos8].style.left="calc("+posicaoX+" + 75px)";
+}}
+}, false);
+//carregar na seta esq:
+document.getElementById("setaEsq").addEventListener("click",function() {
+if (document.getElementsByClassName("imgSlider")[14].style.left==="calc(600px)" ) { return false; } else {
+for (var pos9=0; pos9<tamanhoSlider; pos9++) {
+    var posicaoX=document.getElementsByClassName("imgSlider")[pos9].style.left;
+    document.getElementsByClassName("imgSlider")[pos9].style.left="calc("+posicaoX+" - 75px)";
+}}
+}, false);
+//enviar formulário:
+document.getElementById("btEnviar").onclick=function() {
+        alert("O seu comentário foi enviado!");
+        document.getElementById("formComentarios").submit();
+    }
+//pesquisa:
+document.getElementById("lupa").onclick=function() {
+    if (document.getElementById("pesquisa").value==="") {
+        document.getElementById("pesquisa").style.border="2px solid red";
+        document.getElementById("pesquisa").focus();
+    } else {
+        document.getElementById("formPesquisa").submit();
+    }}
+</script>
+</body>
+</html>
